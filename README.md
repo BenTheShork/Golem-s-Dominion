@@ -14,7 +14,8 @@ Get ready to embark on an epic adventure like no other. Are you brave enough to 
 🕹️ Start your journey now! 🕹️
 --------------------------------------------------------------------------------------------------------------
 
-# 📝 Installation Process for "Golem's Dominion" Game 📝
+# Installation
+📝  Installation Process for "Golem's Dominion" Game 📝
 
 Download the Game Files:
 
