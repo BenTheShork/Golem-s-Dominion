@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top-Down Game</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    canvas {
+      display: block;
+      margin: auto;
+    }
+    .container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div id="main-menu">
+    <h1>Golem's Dominion</h1>
+    <button id="new-game">New Game</button>
+    <button id="instructions">Instructions</button>
+    <p></p>
+  </div>
+  <div id="instructions-window" class="modal">
+    <div class="modal-content">
+      <span id="close-instructions" class="close">&times;</span>
+      <h2>Instructions</h2>
+      <ol>
+        <li><strong>Movement:</strong> Use arrow keys to move your character around the map.</li>
+        <br>
+        <li><strong>Inventory:</strong> Your inventory is located in the top-right corner of the screen.</li>
+        <br>
+        <li><strong>Harvesting Resources:</strong> To harvest resources, stand on a tile and press the 'E' key.</li>
+        <br>
+        <li><strong>Resource Types:</strong> Different biomes provide different types of resources. Berries can be found in grassland, wood in forests, and sand on beaches. Ores like iron, silver, gold, and diamonds can be found in the mountains.</li>
+        <br>
+        <li><strong>Placing Resources:</strong> You can place resources by pressing the 1-7 buttons on your keyboard. Pressing 1 places sand, 2 places wood, and so on.</li>
+        <br>
+        <li><strong>Food:</strong> Berries are essential for your character's survival. You will lose one berry from your inventory every certain amount of time until you have none left, leading to starvation and death.</li>
+        <br>
+        <li><strong>Enemies:</strong> Every minute, an enemy will spawn and attempt to kill you by touching your character. There are no health points for players.</li>
+        <br>
+        <li><strong>Golems:</strong> To defend yourself, you can create a golem from iron, gold, or diamond. Golems have different properties and can be made stronger with better materials. They also require food, which is silver. Keep in mind to always have spare silver in your inventory to feed them.</li>
+        <br>
+        <li><strong>Golem Health:</strong> Golems wander around the map in a certain radius from where they were spawned. They can be seen on the screen along with their current health.</li>
+        <br>
+        <li><strong>Barricades:</strong> Build safe barricades or houses around the golem spawn point to prevent enemies from killing them and to keep them fed.</li>
+        <br>
+        <li><strong>Objective:</strong> The objective of the game is to not only survive, but also to thrive and have fun building and exploring the infinite world. Create outposts, barricades, castles, and other structures to help you survive and dominate the world.</li>
+        <br>
+        <li style="font-size: 25px;"><strong>CHEATS: </strong>For infinite resources, press '<strong>L</strong>' button</li>
+      </ol>
+       </div>
+  </div>
+  <div class="container" id = "container">
+    <h1></h1>
+    <p id="moving-text">
+      <b>Welcome to the Golem's Dominion</b> <br><br>
+      In this new world, <b>dangers</b> abound for the unprepared traveler. <br><br>
+      Roaming beasts and otherworldly monsters lurk around every corner, <i>hungry for flesh and blood</i>. 
+      <br><br>
+      But the greatest danger of all are the <b>ancient golems</b>, once created to serve as guardians and protectors of the land. 
+      Over time, they have grown <i>resentful of their servitude</i>, and now seek to dominate and control all who enter their realm. 
+      <br><br>
+      Only by harnessing the power of these golems can the player hope to <b>survive and thrive</b> in this infinite world, 
+      using them as powerful allies in their quest for <i>survival and domination</i>.
+    </p>
+  </div>
+  <canvas id="gameCanvas" width="1500%" height="700%" style="margin-top: 2%;"></canvas>
+  <script src="game.js"></script>
+</body>
+</html>
